@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+# Indian Agriculture Data Visualization
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that visualizes Indian agriculture data. It uses Mantine's UI components to display tables of crop production, average yield, and cultivation area.
 
-## Available Scripts
+## Deployment
 
-In the project directory, you can run:
+Access the deployed application here:
+`https://6651aecf9c181f1ae48e1666--bejewelled-torrone-615072.netlify.app/`
 
-### `yarn start`
+## Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Crop with Maximum and Minimum Production Data Table:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Crop with Maximum and Minimum Production Data Screenshot 1](/public/production-data.png)
+![Crop with Maximum and Minimum Production Data Screenshot 2](/public/production-data_2.png)
+![Crop with Maximum and Minimum Production Data Screenshot 3](/public/production-data_3.png)
+![Crop with Maximum and Minimum Production Data Screenshot 4](/public/production-data_4.png)
+![Crop with Maximum and Minimum Production Data Screenshot 5](/public/production-data_5.png)
+![Crop with Maximum and Minimum Production Data Screenshot 6](/public/production-data_6.png)
 
-### `yarn test`
+- **Average Yield and Cultivation Area of the Crop Table:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Average Yield and Cultivation Area](/public/yeild-area-data.png)
 
-### `yarn build`
+## Table of Contents
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Features](#features)
+- [Installation](#installation)
+- [Component Details](#component-details)
+- [Approach](#approach)
+- [Technologies Used](#technologies-used)
+- [Authors](#authors)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Displays data on crops with maximum and minimum production for each year.
+- Shows average yield and cultivation area for crops between 1950-2020.
+- Utilizes Mantine UI components for a modern and responsive design.
 
-### `yarn eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project locally, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository.
+2. Navigate to the project directory:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+cd manufac-assg
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install the necessary dependencies:
 
-## Learn More
+```
+yarn install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Run the project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+yarn start
+```
 
-### Code Splitting
+5. Open your browser and navigate to `http://localhost:3000` to view the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Component Details
 
-### Analyzing the Bundle Size
+### 1. Production Data Table
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Description:** This component displays information about crop production, including the crop with maximum and minimum production for each year.
+- **Source:** The data is sourced from a JSON file located at `src/data/data.json`.
+- **Functionality:** It processes the agricultural data to determine the crops with maximum and minimum production for each year and presents this information in a table format.
+- **Technologies:** It utilizes React for building the user interface and Mantine's Table component for styling and layout and pagination.
+- **File:** `src/components/ProductionData.js`
 
-### Making a Progressive Web App
+### 2. Yield and Area Data Table
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Description:** This component presents average yield and cultivation area data for crops between 1950-2020.
+- **Source:** Similar to the Production Data Table, the data is sourced from a JSON file located at `src/data/data.json`.
+- **Functionality:** It calculates the average yield and cultivation area for each crop based on the available data and displays this information in a tabular format.
+- **Technologies:** It also uses React for the user interface and leverages Mantine's Table component for styling and structure.
+- **File:** `src/components/YieldAreaData.js`
 
-### Advanced Configuration
+## Approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Problem Understanding:**
 
-### Deployment
+   - Identified the need to visualize Indian agriculture data.
+   - Defined specific requirements for data visualization.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. **Technology Selection:**
 
-### `yarn build` fails to minify
+   - Chose React.js for frontend development due to its flexibility.
+   - Selected Mantine UI library for styling and UI components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Project Setup:**
+
+   - Initialized a new React project.
+   - Installed dependencies including Mantine UI.
+
+4. **Data Acquisition:**
+
+   - Sourced agricultural data from reliable sources.
+   - Organized data into a structured format (JSON).
+
+5. **Component Development:**
+
+   - Created separate React components for data visualization.
+   - Implemented logic to process and display data accurately.
+   - Styled components using Mantine UI and custom CSS.
+
+6. **Testing and Debugging:**
+
+   - Conducted unit tests on components.
+   - Tested application functionality and UI behavior.
+   - Debugged any issues encountered during testing.
+
+7. **Documentation and Deployment:**
+   - Wrote a README file with setup and usage instructions.
+   - Documented purpose and functionality of each component.
+
+## Technologies Used
+
+- React.js
+- HTML
+- CSS
+- Javascript
+- Mantine v7 library
+
+## Authors
+
+- [@Snehal](https://github.com/Snehal-Salvi)
