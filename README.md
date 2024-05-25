@@ -4,8 +4,7 @@ This project is a React application that visualizes Indian agriculture data. It 
 
 ## Deployment
 
-Access the deployed application here:
-`https://6651aecf9c181f1ae48e1666--bejewelled-torrone-615072.netlify.app/`
+[Indian Agriculture Data Visualization](https://6651aecf9c181f1ae48e1666--bejewelled-torrone-615072.netlify.app/)
 
 ## Screenshots
 
